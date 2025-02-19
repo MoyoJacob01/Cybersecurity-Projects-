@@ -10,7 +10,17 @@ This lab introduced the fundamentals of **offensive security**, focusing on **pe
 1. **Directory Enumeration with Gobuster:**  
    - Ran Gobuster to scan for **hidden web directories**.  
    - Discovered `/bank-transfer` endpoint, which was **not publicly accessible**.  
-   
+   - **Command used:**
+     ```
+     gobuster dir -u http://fakebank.thm -w /usr/share/wordlists/dirb/common.txt
+     ```
+   - **Output:**
+     ```
+     /admin
+     /bank-transfer
+     /login
+     ```
+
 2. **Exploiting the Bank Application:**  
    - Navigated to `/bank-transfer` and analyzed its **functionality & security flaws**.  
    - Found that **transaction security was weak**, allowing unauthorized transfers.  
@@ -18,9 +28,15 @@ This lab introduced the fundamentals of **offensive security**, focusing on **pe
 
 ## 🔑 Key Takeaways:
 - **Gobuster is an essential tool** for discovering hidden files and directories that could expose vulnerabilities.  
-- Attackers often exploit **poorly secured admin panels** to gain access to sensitive features.  
+- Attackers often exploit **poorly secured admin panels** to gain access.  
 - **Proper authentication & access control** are crucial for protecting web applications.  
-- Understanding **offensive security techniques** helps **cybersecurity analysts strengthen defenses**.  
+- Understanding **offensive security techniques helps cybersecurity analysts** strengthen defenses.  
+
+## ⚠️ Challenges Faced & How I Solved Them:
+- **Initial 403 Forbidden Error:** While attempting to access `/admin`, I encountered a **403 Forbidden response**.  
+  - **Solution:** Changed the **User-Agent** in the request header to bypass restrictions.
+- **No Direct Admin Panel Access:** The `/admin` panel wasn’t listed but was identified through wordlist-based enumeration.  
+  - **Solution:** Explored **default credentials** and **common misconfigurations** to gain further access.  
 
 📸 **Screenshot:**  
 ![Gobuster FakeBank Attack](https://github.com/MoyoJacob01/Cybersecurity-Projects-/blob/main/image.png?raw=true))
