@@ -13,4 +13,4 @@ A repository showcasing my hands-on cybersecurity labs, including penetration te
 Aspiring cybersecurity analyst transitioning into the field, currently pursuing CompTIA Security+ and hands-on labs to build skills in penetration testing and threat analysis.
 
 📸 **Example Screenshot:**
-![Gobuster FakeBank Attack]((https://github.com/MoyoJacob01/Cybersecurity-Projects-/blob/main/image.png?raw=true))
+![Gobuster FakeBank Attack](https://github.com/MoyoJacob01/Cybersecurity-Projects-/blob/main/image.png?raw=true)
