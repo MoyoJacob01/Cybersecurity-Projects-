@@ -22,4 +22,4 @@
 - **Logs are crucial for tracking unauthorized activity** and investigating breaches.  
 
 📸 **Screenshot (Optional):**  
-![Defensive Security TryHackMe](PASTE_YOUR_IMAGE_LINK_HERE)
+![Defensive Security TryHackMe](https://raw.githubusercontent.com/MoyoJacob01/Cybersecurity-Projects-/9d2a2b39c4d0ef78c645fd8065867df2acc5d910/Screenshot%202025-02-19%20210617.png)
